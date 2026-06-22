@@ -1,0 +1,24 @@
+{
+  "name": "phq-archive",
+  "version": "1.0.0",
+  "description": "نظام الأرشفة الإلكترونية لقيادة شرطة الديوانية",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.diwanyah.phq.archive",
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    },
+    "portable": {
+      "artifactName": "ArchiveSystem.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
